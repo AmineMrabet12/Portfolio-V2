@@ -747,7 +747,7 @@ body {
     }
     
     .timeline::before {
-        left: 15px;
+        display: none;
     }
     
     .timeline-marker {
@@ -755,11 +755,7 @@ body {
     }
     
     .timeline-marker::before {
-        left: 15px;
-        width: 10px;
-        height: 10px;
-        border: 2px solid white;
-        box-shadow: 0 0 0 1px #8B4513;
+        display: none;
     }
     
     .marker-dot {
@@ -872,11 +868,11 @@ body {
     }
     
     .timeline::before {
-        left: 10px;
+        display: none;
     }
     
     .timeline-marker::before {
-        left: 10px;
+        display: none;
     }
     
     .experience-card {
@@ -941,13 +937,11 @@ body {
     }
     
     .timeline::before {
-        left: 10px;
+        display: none;
     }
     
     .timeline-marker::before {
-        left: 10px;
-        width: 10px;
-        height: 10px;
+        display: none;
     }
     
     .experience-card {
