@@ -266,17 +266,32 @@ body {
     font-size: 0.9rem;
     color: white !important;
     font-weight: 600;
-    background: linear-gradient(135deg, #8B4513, #654321);
+    background: linear-gradient(135deg, #8B4513, #654321) !important;
     padding: 6px 12px;
     border-radius: 20px;
     display: inline-block;
     text-decoration: none !important;
-    border: none;
-    cursor: default;
+    border: none !important;
+    cursor: default !important;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.job-duration:hover,
+.job-duration:focus,
+.job-duration:active,
+.job-duration:visited {
+    color: white !important;
+    text-decoration: none !important;
+    background: linear-gradient(135deg, #8B4513, #654321) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .job-description {
@@ -768,7 +783,19 @@ body {
         padding: 4px 8px;
         color: white !important;
         text-decoration: none !important;
-        cursor: default;
+        cursor: default !important;
+        background: linear-gradient(135deg, #8B4513, #654321) !important;
+        -webkit-tap-highlight-color: transparent;
+        outline: none !important;
+    }
+    
+    .job-duration:hover,
+    .job-duration:focus,
+    .job-duration:active,
+    .job-duration:visited {
+        color: white !important;
+        text-decoration: none !important;
+        background: linear-gradient(135deg, #8B4513, #654321) !important;
     }
     
     .company-info {
@@ -894,7 +921,19 @@ body {
         padding: 3px 6px;
         color: white !important;
         text-decoration: none !important;
-        cursor: default;
+        cursor: default !important;
+        background: linear-gradient(135deg, #8B4513, #654321) !important;
+        -webkit-tap-highlight-color: transparent;
+        outline: none !important;
+    }
+    
+    .job-duration:hover,
+    .job-duration:focus,
+    .job-duration:active,
+    .job-duration:visited {
+        color: white !important;
+        text-decoration: none !important;
+        background: linear-gradient(135deg, #8B4513, #654321) !important;
     }
     
     .timeline {
