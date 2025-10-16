@@ -114,6 +114,119 @@ body {
     margin: 0 auto;
 }
 
+/* Education Section */
+.education-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+.education-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 2px solid #8B4513;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 350px;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(139, 69, 19, 0.25);
+}
+
+.school-logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
+}
+
+.school-logo .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.degree-info {
+    margin-top: 100px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.degree-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.school-name {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.education-duration {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, #8B4513, #654321);
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.education-location {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.jury-remark {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.remark-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8B4513;
+    background: rgba(139, 69, 19, 0.1);
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 2px solid #8B4513;
+}
+
 /* Professional Experience Section */
 .experience-section {
     margin-bottom: 80px;
@@ -353,6 +466,88 @@ body {
 .skill-tag:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+}
+
+/* Final Year Project Section */
+.project-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+
+/* General Section Title Styling */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #8B4513, transparent);
+}
+
+.section-title i {
+    color: #8B4513;
+    font-size: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.skill-category {
+    padding: 20px;
+    border-left: 4px solid #8B4513;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.15);
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.skill-category p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Certifications Section */
@@ -742,6 +937,62 @@ body {
         font-size: 0.85rem;
     }
     
+    .education-grid {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .education-card {
+        padding: 25px;
+        min-height: 320px;
+    }
+    
+    .school-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .degree-info {
+        margin-top: 80px;
+    }
+    
+    .degree-title {
+        font-size: 1.1rem;
+    }
+    
+    .school-name {
+        font-size: 0.9rem;
+    }
+    
+    .education-duration {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    
+    .education-location {
+        font-size: 0.8rem;
+    }
+    
+    .remark-text {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 10px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-title::before,
+    .section-title::after {
+        display: none;
+    }
+    
     .social-activities-section {
         padding: 0 10px;
     }
@@ -960,6 +1211,74 @@ body {
     
     .activity-card {
         padding: 15px;
+    }
+    
+    .education-grid {
+        padding: 0 5px;
+    }
+    
+    .education-card {
+        padding: 20px;
+        min-height: 300px;
+    }
+    
+    .school-logo {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .degree-info {
+        margin-top: 70px;
+    }
+    
+    .degree-title {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    .school-name {
+        font-size: 0.85rem;
+    }
+    
+    .education-duration {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+    
+    .education-location {
+        font-size: 0.75rem;
+    }
+    
+    .remark-text {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        gap: 10px;
+    }
+    
+    .section-title i {
+        font-size: 1.5rem;
+    }
+    
+    .skill-category {
+        padding: 15px;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.1rem;
+    }
+    
+    .skill-category p {
+        font-size: 0.9rem;
     }
     
     .social-activities-section {

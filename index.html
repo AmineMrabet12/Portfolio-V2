@@ -49,9 +49,53 @@
 
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Education Section -->
+        <section class="education-section">
+            <div class="container">
+                <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i>
+                Formation
+            </h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="school-logo">
+                            <img src="logo/1200px-EPITA.png" alt="EPITA Logo" class="logo-image">
+                        </div>
+                        <div class="degree-info">
+                            <h3 class="degree-title">Master international en Sciences des Systèmes d'Intelligence Artificielle</h3>
+                            <p class="school-name">EPITA: École pour l'informatique et les techniques avancées</p>
+                            <div class="education-duration">02/2024 – 09/2025</div>
+                            <div class="education-location">Paris, France</div>
+                        </div>
+                        <div class="jury-remark">
+                            <span class="remark-text">Mention: Très Bien</span>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="school-logo">
+                            <img src="logo/ebs.png" alt="ESB Logo" class="logo-image">
+                        </div>
+                        <div class="degree-info">
+                            <h3 class="degree-title">Licence en Mathématiques Appliquées à l'Analyse des Données et l'aide à la Décision</h3>
+                            <p class="school-name">ESB: Esprit School of Business</p>
+                            <div class="education-duration">09/2020 – 07/2023</div>
+                            <div class="education-location">Tunis, Tunisie</div>
+                        </div>
+                        <div class="jury-remark">
+                            <span class="remark-text">Mention: Excellent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Professional Experience Section -->
         <section class="experience-section">
-            <h2 class="section-title">Expérience Professionnelle</h2>
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i>
+                Expérience Professionnelle
+            </h2>
             <div class="timeline">
                 <!-- Data Engineer at Carrefour -->
                 <div class="timeline-item">
@@ -182,13 +226,131 @@
                             </div>
                         </div>
                     </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Year Project Section -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-project-diagram"></i>
+                Projet de fin d'études
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="company-logo">
+                                <img src="logo/ebs.png" alt="ESB Logo" class="logo-image">
+                            </div>
+                            <div class="experience-header">
+                                <h3 class="job-title">Système de détection de présence par reconnaissance faciale</h3>
+                                <div class="company-info">
+                                    <span class="company-name">Esprit School of Business</span>
+                                    <span class="location">Tunis, Tunisie</span>
+                                </div>
+                                <div class="job-duration">02/2023 – 07/2023</div>
+                            </div>
+                            <div class="job-description">
+                                <p>Développement d'un système complet de reconnaissance faciale pour l'automatisation de la prise de présence des étudiants, intégrant des technologies d'intelligence artificielle avancées et une interface web interactive.</p>
+                                <div class="achievements">
+                                    <h4>Réalisations :</h4>
+                                    <ul>
+                                        <li>Création d'une application web pour les étudiants pour collecter leurs images faciales en utilisant Flask, HTML et CSS</li>
+                                        <li>Création d'un modèle GAN pour l'augmentation et la variation des données faciales</li>
+                                        <li>Création d'un modèle CNN et Transfer‑Learning en utilisant Keras et TensorFlow pour reconnaître les étudiants et marquer la présence</li>
+                                        <li>Création d'une application web pour les enseignants et l'administration où ils peuvent surveiller les statistiques de présence des étudiants</li>
+                                    </ul>
+                                </div>
+                                <div class="result">
+                                    <strong>Titre :</strong> Meilleur projet de l'année
+                                </div>
+                                <div class="tech-skills">
+                                    <span class="skill-tag">Tensorflow</span>
+                                    <span class="skill-tag">Scikit‑learn</span>
+                                    <span class="skill-tag">YOLO</span>
+                                    <span class="skill-tag">CNN</span>
+                                    <span class="skill-tag">GAN</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">Flask</span>
+                                    <span class="skill-tag">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Certifications Section -->
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-brain"></i>
+                Compétences
+            </h2>
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <div class="skill-category">
+                        <h3>Programmation</h3>
+                        <p>Python, R, HTML/CSS, SQL</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Plateformes Cloud</h3>
+                        <p>GCP (Cloud Run, Compute Engine, GCS, BigQuery, Looker), AWS (EC2, ECS, ECR, S3, IAM, RDS, SageMaker, VPC)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>MLOps & Orchestration</h3>
+                        <p>MLflow, Apache Airflow, Locust</p>
+                    </div>
+                </div>
+                
+                <div class="skills-column">
+                    <div class="skill-category">
+                        <h3>Bibliothèques d'IA</h3>
+                        <p>Tensorflow, PyTorch, Keras, Scikit‑learn, XGBoost</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Engineering</h3>
+                        <p>DBT, Apache Airflow, Great‑Expectations</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Surveillance & Visualisation</h3>
+                        <p>Grafana, Power BI, Tableau, SHAP, Matplotlib, Seaborn</p>
+                    </div>
+                </div>
+                
+                <div class="skills-column">
+                    <div class="skill-category">
+                        <h3>Développement Web</h3>
+                        <p>Flask, FastAPI, Streamlit, Selenium, Request‑HTML, Beautiful‑soup, Swagger</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Conteneurisation</h3>
+                        <p>Docker, Docker‑Compose</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Contrôle de Version</h3>
+                        <p>Git</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
         <section class="certifications-section">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">
+                <i class="fas fa-certificate"></i>
+                Certifications
+            </h2>
             <div class="certifications-grid">
                 <!-- Microsoft Certified Trainer Certifications -->
                 <div class="cert-card">
@@ -284,7 +446,10 @@
         </section>
 
         <section class="projects-section">
-            <h2 class="section-title">Projets Réalisés</h2>
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                Projets Réalisés
+            </h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
@@ -537,7 +702,10 @@
 
         <!-- Social Activities Section -->
         <section class="social-activities-section">
-            <h2 class="section-title">Activités Sociales</h2>
+            <h2 class="section-title">
+                <i class="fas fa-users"></i>
+                Activités Sociales
+            </h2>
             <div class="activities-grid">
                 <!-- Head of Hard-Skills Department -->
                 <div class="activity-card">
