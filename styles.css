@@ -470,13 +470,13 @@ body {
 
 /* Final Year Project Section */
 .project-section {
-    padding: 80px 20px;
+    padding: 10px 20px;
     background: white;
 }
 
 /* Skills Section */
 .skills-section {
-    padding: 80px 20px;
+    padding: 20px 20px;
     background: white;
 }
 
@@ -552,6 +552,7 @@ body {
 
 /* Certifications Section */
 .certifications-section {
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 
