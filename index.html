@@ -5,460 +5,540 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Amine Mrabet - Data Scientist</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="header-content">
-            <div class="profile-image-container">
-                <img src="IMG_7163.jpeg" alt="Mohamed Amine Mrabet" class="profile-image">
-            </div>
-            <div class="contact-info">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">MA.</div>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="about">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-text">
+                <span class="greeting">Bonjour, je suis</span>
                 <h1>Mohamed Amine Mrabet</h1>
-                    <h2>Data Scientist | Data Engineer</h2>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>mrabemohamedamine1@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>0750533956</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Paris</span>
-                    </div>
+                <h2 class="typing-text">Data Scientist | Data Engineer</h2>
+                <p class="hero-description">
+                    Expert en transformation de données complexes en solutions intelligentes.
+                    Spécialisé en Machine Learning, MLOps et Cloud Computing.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                    <a href="#projects" class="btn btn-outline">Voir mes projets</a>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/mohamed-amine-mrabet/" class="social-link" target="_blank">
+
+                <div class="social-links hero-social">
+                    <a href="https://www.linkedin.com/in/mohamed-amine-mrabet/" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/AmineMrabet12" class="social-link" target="_blank">
+                    <a href="https://github.com/AmineMrabet12" target="_blank" aria-label="Github">
                         <i class="fab fa-github"></i>
-                        <span>Github</span>
+                    </a>
+                    <a href="mailto:mrabemohamedamine1@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
+
+            <div class="hero-image-container" data-aos="fade-left">
+                <div class="image-wrapper">
+                    <img src="IMG_7163.jpeg" alt="Mohamed Amine Mrabet" class="profile-image">
+                    <div class="shape-blob"></div>
+                    <div class="shape-blob-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#experience">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Education Section -->
-        <section class="education-section">
-            <div class="container">
-                <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i>
-                Formation
-            </h2>
-                <div class="education-grid">
-                    <div class="education-card">
-                        <div class="school-logo">
-                            <img src="logo/EPITA School of Engineering and Computer Science_Logo.png" alt="EPITA Logo" class="logo-image">
-                        </div>
-                        <div class="degree-info">
-                            <h3 class="degree-title">Master international en Sciences des Systèmes d'Intelligence Artificielle</h3>
-                            <p class="school-name">EPITA: École pour l'informatique et les techniques avancées</p>
-                            <div class="education-duration">02/2024 – 09/2025</div>
-                            <div class="education-location">Paris, France</div>
-                        </div>
-                        <div class="jury-remark">
-                            <span class="remark-text">Mention: Très Bien</span>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card">
-                        <div class="school-logo">
-                            <img src="logo/ebs.png" alt="ESB Logo" class="logo-image">
-                        </div>
-                        <div class="degree-info">
-                            <h3 class="degree-title">Licence en Mathématiques Appliquées à l'Analyse des Données et l'aide à la Décision</h3>
-                            <p class="school-name">ESB: Esprit School of Business</p>
-                            <div class="education-duration">09/2020 – 07/2023</div>
-                            <div class="education-location">Tunis, Tunisie</div>
-                        </div>
-                        <div class="jury-remark">
-                            <span class="remark-text">Mention: Excellent</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Professional Experience Section -->
-        <section class="experience-section">
-            <h2 class="section-title">
-                <i class="fas fa-briefcase"></i>
-                Expérience Professionnelle
-            </h2>
-            <div class="timeline">
-                <!-- Data Engineer at Carrefour -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="company-logo">
-                                <img src="logo/Emblema-Carrefour.png" alt="Carrefour Logo" class="logo-image">
-                            </div>
-                            <div class="experience-header">
-                                <h3 class="job-title">Data Engineer</h3>
-                                <div class="company-info">
-                                    <span class="company-name">Carrefour</span>
-                                    <span class="location">Paris, France</span>
-                                </div>
-                                <div class="job-duration">Mars. 2025 – Sept. 2025</div>
-                            </div>
-                            <div class="job-description">
-                                <p>Refonte de l'API de machine learning de la prédiction des ventes en promotions, afin de migrer d'une architecture monolithique vers une architecture microservices sur Google Cloud Run.</p>
-                                <div class="achievements">
-                                    <h4>Réalisations :</h4>
-                                    <ul>
-                                        <li>Mise en place de pipelines de données automatisés pour l'ingestion</li>
-                                        <li>Transformation (via DBT et Airflow) et l'analyse des performances des modèles dans BigQuery</li>
-                                        <li>Création de tableaux de bord interactifs dans Looker Studio pour le suivi des métriques clés et des tendances de vente</li>
-                                    </ul>
-                                </div>
-                                <div class="result">
-                                    <strong>Résultat :</strong> Optimisation de 20GB de RAM et 8min de démarrage à 3GB et 8s.
-                                </div>
-                                <div class="tech-skills">
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">SQL</span>
-                                    <span class="skill-tag">GCP</span>
-                                    <span class="skill-tag">DBT</span>
-                                    <span class="skill-tag">Airflow</span>
-                                    <span class="skill-tag">BigQuery</span>
-                                    <span class="skill-tag">Looker Studio</span>
-                                    <span class="skill-tag">Docker</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Scientist at IT-PEAC -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="company-logo">
-                                <img src="logo/ITPEAC.png" alt="IT-PEAC Logo" class="logo-image">
-                            </div>
-                            <div class="experience-header">
-                                <h3 class="job-title">Data Scientist</h3>
-                                <div class="company-info">
-                                    <span class="company-name">IT-PEAC</span>
-                                    <span class="location">Sousse, Tunisie</span>
-                                </div>
-                                <div class="job-duration">Août. 2023 – Janv. 2024</div>
-                            </div>
-                            <div class="job-description">
-                                <p>Développement d'un système de prédiction de prix de voitures utilisant des algorithmes de régression avancés (Random Forest, XGBoost, Linear Regression) déployé sur AWS avec une architecture containerisée.</p>
-                                <div class="achievements">
-                                    <h4>Réalisations :</h4>
-                                    <ul>
-                                        <li>Conception d'un pipeline de données automatisé pour la collecte, la préparation et l'entraînement des modèles</li>
-                                        <li>Intégration des analyses exploratoires et le suivi des performances dans Amazon QuickSight</li>
-                                        <li>Mise en place d'une génération de prédictions en temps réel pour les tableaux de bord décisionnels et l'aide à la tarification</li>
-                                    </ul>
-                                </div>
-                                <div class="tech-skills">
-                                    <span class="skill-tag">TensorFlow</span>
-                                    <span class="skill-tag">Scikit-learn</span>
-                                    <span class="skill-tag">AWS</span>
-                                    <span class="skill-tag">QuickSight</span>
-                                    <span class="skill-tag">Tableau</span>
-                                    <span class="skill-tag">Docker</span>
-                                    <span class="skill-tag">Flask</span>
-                                    <span class="skill-tag">XGBoost</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Business Intelligence Analyst at A.M.A Group -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="company-logo">
-                                <img src="logo/amagroup_qualityfirst_safetybefore_logo.jpeg" alt="A.M.A Group Logo" class="logo-image">
-                            </div>
-                            <div class="experience-header">
-                                <h3 class="job-title">Business Intelligence Analyst</h3>
-                                <div class="company-info">
-                                    <span class="company-name">A.M.A Group - OMDI</span>
-                                    <span class="location">Tunis, Tunisie</span>
-                                </div>
-                                <div class="job-duration">Août. 2022 – Sept. 2022</div>
-                            </div>
-                            <div class="job-description">
-                                <p>Réalisé pour le département commercial afin d'analyser et de visualiser les données de ventes.</p>
-                                <div class="achievements">
-                                    <h4>Réalisations :</h4>
-                                    <ul>
-                                        <li>Développement de spécifications</li>
-                                        <li>Création d'un tableau de bord web statique avec Python</li>
-                                        <li>Création d'un tableau de bord dynamique avec Power BI</li>
-                                    </ul>
-                                </div>
-                                <div class="tech-skills">
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">Power BI</span>
-                                    <span class="skill-tag">Seaborn</span>
-                                    <span class="skill-tag">Plotly</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final Year Project Section -->
-    <section class="project-section">
-        <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-project-diagram"></i>
-                Projet de fin d'études
-            </h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="company-logo">
-                                <img src="logo/ebs.png" alt="ESB Logo" class="logo-image">
-                            </div>
-                            <div class="experience-header">
-                                <h3 class="job-title">Système de détection de présence par reconnaissance faciale</h3>
-                                <div class="company-info">
-                                    <span class="company-name">Esprit School of Business</span>
-                                    <span class="location">Tunis, Tunisie</span>
-                                </div>
-                                <div class="job-duration">02/2023 – 07/2023</div>
-                            </div>
-                            <div class="job-description">
-                                <p>Développement d'un système complet de reconnaissance faciale pour l'automatisation de la prise de présence des étudiants, intégrant des technologies d'intelligence artificielle avancées et une interface web interactive.</p>
-                                <div class="achievements">
-                                    <h4>Réalisations :</h4>
-                                    <ul>
-                                        <li>Création d'une application web pour les étudiants pour collecter leurs images faciales en utilisant Flask, HTML et CSS</li>
-                                        <li>Création d'un modèle GAN pour l'augmentation et la variation des données faciales</li>
-                                        <li>Création d'un modèle CNN et Transfer‑Learning en utilisant Keras et TensorFlow pour reconnaître les étudiants et marquer la présence</li>
-                                        <li>Création d'une application web pour les enseignants et l'administration où ils peuvent surveiller les statistiques de présence des étudiants</li>
-                                    </ul>
-                                </div>
-                                <div class="result">
-                                    <strong>Titre :</strong> Meilleur projet de l'année
-                                </div>
-                                <div class="tech-skills">
-                                    <span class="skill-tag">Tensorflow</span>
-                                    <span class="skill-tag">Scikit‑learn</span>
-                                    <span class="skill-tag">YOLO</span>
-                                    <span class="skill-tag">CNN</span>
-                                    <span class="skill-tag">GAN</span>
-                                    <span class="skill-tag">Git</span>
-                                    <span class="skill-tag">HTML</span>
-                                    <span class="skill-tag">CSS</span>
-                                    <span class="skill-tag">Flask</span>
-                                    <span class="skill-tag">SQL</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-brain"></i>
-                Compétences
-            </h2>
-            <div class="skills-grid">
-                <div class="skills-column">
-                    <div class="skill-category">
-                        <h3>Programmation</h3>
-                        <p>Python, R, HTML/CSS, SQL</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Plateformes Cloud</h3>
-                        <p>GCP (Cloud Run, Compute Engine, GCS, BigQuery, Looker), AWS (EC2, ECS, ECR, S3, IAM, RDS, SageMaker, VPC)</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>MLOps & Orchestration</h3>
-                        <p>MLflow, Apache Airflow, Locust</p>
-                    </div>
-                </div>
-                
-                <div class="skills-column">
-                    <div class="skill-category">
-                        <h3>Bibliothèques d'IA</h3>
-                        <p>Tensorflow, PyTorch, Keras, Scikit‑learn, XGBoost</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Data Engineering</h3>
-                        <p>DBT, Apache Airflow, Great‑Expectations</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Surveillance & Visualisation</h3>
-                        <p>Grafana, Power BI, Tableau, SHAP, Matplotlib, Seaborn</p>
-                    </div>
-                </div>
-                
-                <div class="skills-column">
-                    <div class="skill-category">
-                        <h3>Développement Web</h3>
-                        <p>Flask, FastAPI, Streamlit, Selenium, Request‑HTML, Beautiful‑soup, Swagger</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Conteneurisation</h3>
-                        <p>Docker, Docker‑Compose</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Contrôle de Version</h3>
-                        <p>Git</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-        <section class="certifications-section">
-            <h2 class="section-title">
-                <i class="fas fa-certificate"></i>
-                Certifications
-            </h2>
-            <div class="certifications-grid">
-                <!-- Microsoft Certified Trainer Certifications -->
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/Udemy-Logo.png" alt="Deep Learning with TensorFlow and Keras" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">Deep Learning with TensorFlow and Keras</h3>
-                        <p class="cert-issuer">Udemy</p>
-                        <p class="cert-date">2023</p>
-                    </div>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/IBM_logo.svg.png" alt="Databases and SQL for Data Science with Python" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">Databases and SQL for Data Science with Python</h3>
-                        <p class="cert-issuer">Coursera</p>
-                        <p class="cert-date">2020</p>
-                    </div>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/MCT-Microsoft_Certified_Trainer.png" alt="Microsoft Certified Trainer" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">Microsoft Certified Trainer</h3>
-                        <p class="cert-issuer">Microsoft</p>
-                        <p class="cert-date">2022</p>
-                    </div>
-                </div>
-
-                <!-- MTA Certifications -->
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/MTA-Database_Fundamentals-600x600.png" alt="MTA Database Fundamentals" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">Database Fundamentals</h3>
-                        <p class="cert-issuer">Microsoft</p>
-                        <p class="cert-date">2021</p>
-                    </div>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/MTA-Introduction_to_Programming_Using_Python-600x600.png" alt="MTA Introduction to Programming Using Python" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">Introduction to Programming Using Python</h3>
-                        <p class="cert-issuer">Microsoft</p>
-                        <p class="cert-date">2021</p>
-                    </div>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/MOS_Excel.png" alt="Microsoft Office Specialist Excel" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">Microsoft Office Specialist: Excel Associate</h3>
-                        <p class="cert-issuer">Microsoft</p>
-                        <p class="cert-date">2021</p>
-                    </div>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/MOS_Excel_Expert6.png" alt="Microsoft Office Specialist Excel Expert" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">Microsoft Office Specialist: Excel Expert</h3>
-                        <p class="cert-issuer">Microsoft</p>
-                        <p class="cert-date">2020</p>
-                    </div>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <img src="Badges/MicrosoftTeams-image__5_.png" alt="Microsoft Office Specialist PowerPoint" class="cert-image">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-title">IT Specialist - Databases</h3>
-                        <p class="cert-issuer">Certiport/Pearson</p>
-                        <p class="cert-date">2021</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="projects-section">
-            <h2 class="section-title">
-                <i class="fas fa-code"></i>
-                Projets Réalisés
+<!-- Education Section -->
+        <section id="education" class="education-section">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-graduation-cap"></i> Formation
             </h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <a href="https://github.com/AmineMrabet12/DSP-Project" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <h3 class="project-title">ML Engineering</h3>
-                    <div class="project-description">
-                        <p>Projet d'ingénierie de données scientifiques avec pipeline complet de ML Engineering :</p>
+
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="logo/EPITA School of Engineering and Computer Science_Logo.png" alt="EPITA"
+                                class="company-logo-small">
+                            <div>
+                                <h3>Master en Intelligence Artificielle</h3>
+                                <p class="company-name" style="color: var(--primary);">EPITA | 2024 - 2025</p>
+                            </div>
+                        </div>
+                        <p class="project-description">Master international en Sciences des Systèmes d'Intelligence
+                            Artificielle. <br><strong>Mention: Très Bien</strong></p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Paris, France</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="logo/ebs.png" alt="ESB" class="company-logo-small">
+                            <div>
+                                <h3>Licence en Mathématiques Appliquées</h3>
+                                <p class="company-name" style="color: var(--primary);">ESB | 2020 - 2023</p>
+                            </div>
+                        </div>
+                        <p class="project-description">Analyse des Données et Aide à la Décision. <br><strong>Mention:
+                                Excellent</strong></p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Tunis, Tunisie</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-briefcase"></i> Expérience Professionnelle
+            </h2>
+            <div class="timeline">
+
+                <!-- Carrefour -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card glass-card">
+                            <span class="job-duration">Mars 2025 – Sept. 2025</span>
+                            <div class="experience-header-with-logo">
+                                <img src="logo/Emblema-Carrefour.png" alt="Carrefour" class="company-logo-small">
+                                <div>
+                                    <h3>Data Engineer</h3>
+                                    <span class="company-name">Carrefour | Paris, France</span>
+                                </div>
+                            </div>
+                            <div class="job-description">
+                                <p>Refonte de l'API de machine learning de la prédiction des ventes en promotions, afin
+                                    de migrer d'une architecture monolithique vers une architecture microservices sur
+                                    Google Cloud Run.</p>
+                                <ul>
+                                    <li>Mise en place de pipelines de données automatisés pour l'ingestion</li>
+                                    <li>Transformation (via DBT et Airflow) et l'analyse des performances des modèles
+                                        dans BigQuery</li>
+                                    <li>Création de tableaux de bord interactifs dans Looker Studio pour le suivi des
+                                        métriques clés et des tendances de vente</li>
+                                </ul>
+                                <div class="result">
+                                    <strong>Résultat :</strong> Optimisation de 20GB de RAM et 8min de démarrage à 3GB
+                                    et 8s.
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">SQL</span>
+                                    <span class="tech-tag">UV</span>
+                                    <span class="tech-tag">Ruff</span>
+                                    <span class="tech-tag">Scikit‑learn</span>
+                                    <span class="tech-tag">GCP</span>
+                                    <span class="tech-tag">DBT</span>
+                                    <span class="tech-tag">Airflow</span>
+                                    <span class="tech-tag">BigQuery</span>
+                                    <span class="tech-tag">Looker Studio</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Git</span>
+                                    <span class="tech-tag">Locust</span>
+                                    <span class="tech-tag">Swagger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IT-PEAC -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card glass-card">
+                            <span class="job-duration">Août 2023 – Janv. 2024</span>
+                            <div class="experience-header-with-logo">
+                                <img src="logo/ITPEAC.png" alt="IT-PEAC" class="company-logo-small">
+                                <div>
+                                    <h3>Data Scientist</h3>
+                                    <span class="company-name">IT-PEAC | Sousse, Tunisie</span>
+                                </div>
+                            </div>
+                            <div class="job-description">
+                                <p>Développement d'un système de prédiction de prix de voitures utilisant des
+                                    algorithmes de régression avancés (Random Forest, XGBoost, Linear Regression)
+                                    déployé sur AWS avec une architecture containerisée.</p>
+                                <ul>
+                                    <li>Conception d'un pipeline de données automatisé pour la collecte, la préparation
+                                        et l'entraînement des modèles</li>
+                                    <li>Intégration des analyses exploratoires et le suivi des performances dans Amazon
+                                        QuickSight</li>
+                                    <li>Mise en place d'une génération de prédictions en temps réel pour les tableaux de
+                                        bord décisionnels et l'aide à la tarification</li>
+                                </ul>
+                                <div class="result">
+                                    <strong>Résultat :</strong> amélioration des performances du modèle avec une marge
+                                    d’erreur moyenne de ±1 000 €.
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">QuickSight</span>
+                                    <span class="tech-tag">Tableau</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">XGBoost</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.M.A Group -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card glass-card">
+                            <span class="job-duration">Août 2022 – Sept. 2022</span>
+                            <div class="experience-header-with-logo">
+                                <img src="logo/amagroup_qualityfirst_safetybefore_logo.jpeg" alt="A.M.A Group"
+                                    class="company-logo-small">
+                                <div>
+                                    <h3>Data Analyst</h3>
+                                    <span class="company-name">A.M.A Group - OMDI | Tunis, Tunisie</span>
+                                </div>
+                            </div>
+                            <div class="job-description">
+                                <p>Réalisé pour le département commercial afin d'analyser et de visualiser les données
+                                    de ventes.</p>
+                                <ul>
+                                    <li>Développement de spécifications</li>
+                                    <li>Création d'un tableau de bord web statique avec Python</li>
+                                    <li>Création d'un tableau de bord dynamique avec Power BI</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Power BI</span>
+                                    <span class="tech-tag">Seaborn</span>
+                                    <span class="tech-tag">Plotly</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PFE Section -->
+        <section id="pfe-project" class="pfe-section">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-star"></i> Projet de Fin d'Études
+            </h2>
+            <div class="projects-grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto;">
+                <!-- Single column, centered, limited width -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="logo/ebs.png" alt="ESB" class="company-logo-small">
+                            <div>
+                                <h3 style="font-size: 1.4rem;">Système de détection de présence par reconnaissance
+                                    faciale (PFE)</h3>
+                                <div
+                                    style="font-size: 0.9rem; color: var(--accent); margin-top: 5px; font-weight: 500; display: flex; align-items: center; gap: 5px;">
+                                    <i class="fas fa-trophy"></i> Titre : Meilleur projet de l'année
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-description" style="margin-top: 1rem;">Développement d'un système complet de
+                            reconnaissance faciale pour
+                            l'automatisation de la prise de présence des étudiants, intégrant des technologies
+                            d'intelligence artificielle avancées et une interface web interactive.</p>
+                        <ul>
+                            <li>Création d'une application web pour les étudiants pour collecter leurs images faciales
+                                en utilisant Flask, HTML et CSS</li>
+                            <li>Création d'un modèle GAN pour l'augmentation et la variation des données faciales</li>
+                            <li>Création d'un modèle CNN et Transfer‑Learning en utilisant Keras et TensorFlow pour
+                                reconnaître les étudiants et marquer la présence</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Scikit‑learn</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">GAN</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-brain"></i> Compétences
+            </h2>
+            <div class="skills-grid">
+
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>Programmation</h3>
+                    <p class="skill-list">Python, R, HTML/CSS, SQL</p>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Plateformes Cloud</h3>
+                    <p class="skill-list">GCP (Cloud Run, Compute Engine, GCS, BigQuery, Looker), AWS (EC2, ECS, ECR,
+                        S3, IAM, RDS, SageMaker, VPC)</p>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>MLOps & Orchestration</h3>
+                    <p class="skill-list">MLflow, Apache Airflow, Locust</p>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Bibliothèques d'IA</h3>
+                    <p class="skill-list">Tensorflow, PyTorch, Keras, Scikit‑learn, XGBoost</p>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Engineering</h3>
+                    <p class="skill-list">DBT, Apache Airflow, Great‑Expectations</p>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Surveillance & Visualisation</h3>
+                    <p class="skill-list">Grafana, Power BI, Tableau, SHAP, Matplotlib, Seaborn</p>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Développement Web</h3>
+                    <p class="skill-list">Flask, FastAPI, Streamlit, Selenium, Request‑HTML, Beautiful‑soup, Swagger</p>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon"><i class="fas fa-box"></i></div>
+                    <h3>Conteneurisation</h3>
+                    <p class="skill-list">Docker, Docker‑Compose</p>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>Contrôle de Version</h3>
+                    <p class="skill-list">Git</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-certificate"></i> Certifications
+            </h2>
+            <div class="projects-grid">
+                <!-- AI Model deployment on AWS -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/365-data-science.png" alt="365DataScience" class="company-logo-small">
+                            <div>
+                                <h3>AI Model deployment on AWS</h3>
+                                <p class="project-description">365DataScience (2025)</p>
+                            </div>
+                        </div>
+                        <div class="eye-icon-btn" onclick="openCertPreview('certifs/CC-23F2A2B30E.pdf')">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power BI -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/365-data-science.png" alt="365DataScience" class="company-logo-small">
+                            <div>
+                                <h3>Power BI</h3>
+                                <p class="project-description">365DataScience (2025)</p>
+                            </div>
+                        </div>
+                        <div class="eye-icon-btn" onclick="openCertPreview('certifs/CC-E099A50CAC.pdf')">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deep Learning -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/Udemy-Logo.png" alt="Udemy" class="company-logo-small">
+                            <div>
+                                <h3>Deep Learning with TensorFlow and Keras</h3>
+                                <p class="project-description">Udemy (2023)</p>
+                            </div>
+                        </div>
+                        <div class="eye-icon-btn" onclick="openCertPreview('certifs/Udemy Deep Learning.pdf')">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Databases and SQL -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/IBM_logo.svg.png" alt="Coursera" class="company-logo-small">
+                            <div>
+                                <h3>Databases and SQL for Data Science with Python</h3>
+                                <p class="project-description">Coursera (2020)</p>
+                            </div>
+                        </div>
+                        <div class="eye-icon-btn" onclick="openCertPreview('certifs/IBM-Python-SQL.pdf')">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Microsoft Certified Trainer -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/MCT-Microsoft_Certified_Trainer.png" alt="Microsoft"
+                                class="company-logo-small">
+                            <div>
+                                <h3>Microsoft Certified Trainer</h3>
+                                <p class="project-description">Microsoft (2022)</p>
+                            </div>
+                        </div>
+                        <div class="eye-icon-btn" onclick="openCertPreview('certifs/MCT.pdf')">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Database Fundamentals -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/MTA-Database_Fundamentals-600x600.png" alt="Microsoft"
+                                class="company-logo-small">
+                            <div>
+                                <h3>Database Fundamentals</h3>
+                                <p class="project-description">Microsoft (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Introduction to Programming Using Python -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/MTA-Introduction_to_Programming_Using_Python-600x600.png" alt="Microsoft"
+                                class="company-logo-small">
+                            <div>
+                                <h3>Introduction to Programming Using Python</h3>
+                                <p class="project-description">Microsoft (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Microsoft Office Specialist: Excel Associate -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/MOS_Excel.png" alt="Microsoft" class="company-logo-small">
+                            <div>
+                                <h3>Microsoft Office Specialist: Excel Associate</h3>
+                                <p class="project-description">Microsoft (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Microsoft Office Specialist: Excel Expert -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/MOS_Excel_Expert6.png" alt="Microsoft" class="company-logo-small">
+                            <div>
+                                <h3>Microsoft Office Specialist: Excel Expert</h3>
+                                <p class="project-description">Microsoft (2020)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- IT Specialist - Databases -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="experience-header-with-logo">
+                            <img src="Badges/MicrosoftTeams-image__5_.png" alt="Certiport" class="company-logo-small">
+                            <div>
+                                <h3>IT Specialist - Databases</h3>
+                                <p class="project-description">Certiport/Pearson (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-code"></i> Autres Projets Réalisés
+            </h2>
+            <div class="projects-grid">
+
+                <!-- ML Engineering -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>ML Engineering</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AmineMrabet12/DSP-Project" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Projet d'ingénierie de données scientifiques avec pipeline
+                            complet de ML Engineering.</p>
                         <ul>
                             <li>Développement d'un pipeline de données robuste avec PostgreSQL pour le stockage et la
                                 gestion des datasets</li>
@@ -470,27 +550,30 @@
                             <li>Monitoring et visualisation des performances en temps réel avec Grafana</li>
                             <li>Pipeline de preprocessing et feature engineering avec Scikit-learn</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Scikit‑learn</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Airflow</span>
-                        <span class="tech-tag">Great‑Expectations</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Grafana</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit‑learn</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">Great‑Expectations</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <a href="https://github.com/AmineMrabet12/AI-Meth" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <h3 class="project-title">Analyse du Comportement des Clients</h3>
-                    <div class="project-description">
-                        <p>Projet d'analyse approfondie du comportement des clients utilisant des méthodes d'IA avancées
-                            :</p>
+                <!-- Analyse du Comportement des Clients -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Analyse du Comportement des Clients</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AmineMrabet12/AI-Meth" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Projet d'analyse approfondie du comportement des clients
+                            utilisant des méthodes d'IA avancées.</p>
                         <ul>
                             <li>Développement d'un pipeline complet de machine learning pour l'identification de
                                 patterns comportementaux</li>
@@ -500,25 +583,29 @@
                             <li>Déploiement d'un modèle XGBoost optimisé avec suivi des performances via MLflow</li>
                             <li>Documentation automatique avec Sphinx</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Scikit‑learn</span>
-                        <span class="tech-tag">SHAP</span>
-                        <span class="tech-tag">MLflow</span>
-                        <span class="tech-tag">XGBoost</span>
-                        <span class="tech-tag">Sphinx</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit‑learn</span>
+                            <span class="tech-tag">SHAP</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Sphinx</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <a href="https://github.com/AmineMrabet12/dsp-amine-mrabet" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <h3 class="project-title">Prédiction des Prix des Maisons</h3>
-                    <div class="project-description">
-                        <p>Projet de prédiction immobilière avec pipeline complet de machine learning :</p>
+                <!-- Prédiction des Prix des Maisons -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Prédiction des Prix des Maisons</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AmineMrabet12/dsp-amine-mrabet" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Projet de prédiction immobilière avec pipeline complet de machine
+                            learning.</p>
                         <ul>
                             <li>Analyse exploratoire des données immobilières avec visualisations avancées</li>
                             <li>Feature engineering et preprocessing des données de propriétés</li>
@@ -527,23 +614,27 @@
                             <li>Évaluation des performances avec métriques de régression</li>
                             <li>Pipeline de déploiement pour la prédiction en temps réel</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">XGBoost</span>
-                        <span class="tech-tag">Scikit‑learn</span>
-                        <span class="tech-tag">Matplotlib</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Scikit‑learn</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <a href="https://github.com/AmineMrabet12/Multi-Tower-Model" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <h3 class="project-title">Modèle Multi‑Tours (système de recommandation)</h3>
-                    <div class="project-description">
-                        <p>Projet de système de recommandation utilisant l'architecture Multi-Tower Model :</p>
+                <!-- Modèle Multi‑Tours -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Modèle Multi‑Tours (système de recommandation)</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AmineMrabet12/Multi-Tower-Model" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Projet de système de recommandation utilisant l'architecture
+                            Multi-Tower Model.</p>
                         <ul>
                             <li>Développement d'une architecture multi-tours pour la recommandation personnalisée</li>
                             <li>Implémentation de modèles de deep learning avec TensorFlow/Keras</li>
@@ -553,26 +644,30 @@
                             <li>Optimisation des performances avec des techniques de récupération efficace</li>
                             <li>Évaluation et comparaison avec des modèles de recommandation classiques</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Scikit‑learn</span>
-                        <span class="tech-tag">Sentence Transformers</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit‑learn</span>
+                            <span class="tech-tag">Sentence Transformers</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 9 -->
-                <div class="project-card">
-                    <a href="https://github.com/AmineMrabet12/Action-Learning" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <h3 class="project-title">Text-to-Music Generator</h3>
-                    <div class="project-description">
-                        <p>Application web de génération de musique à partir de descriptions textuelles:</p>
+                <!-- Text-to-Music Generator -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Text-to-Music Generator</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AmineMrabet12/Action-Learning" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Application web de génération de musique à partir de descriptions
+                            textuelles.</p>
                         <ul>
                             <li>Génération de musique à partir de descriptions textuelles avec MusicGen</li>
                             <li>Interface utilisateur complète avec authentification et gestion de tokens</li>
@@ -581,25 +676,29 @@
                             <li>Système de playlist, partage et gestion de profils utilisateurs</li>
                             <li>Fonctionnalités sociales avec posts de story et traduction multilingue</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">SQLAlchemy</span>
-                        <span class="tech-tag">MusicGen</span>
-                        <span class="tech-tag">PyTorch</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">SQLAlchemy</span>
+                            <span class="tech-tag">MusicGen</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 8 -->
-                <div class="project-card">
-                    <a href="https://github.com/AmineMrabet12/Deep-Learning" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <h3 class="project-title">Classification d'émotions</h3>
-                    <div class="project-description">
-                        <p>Projet de classification d'émotions basé sur l'analyse de texte avec deep learning :</p>
+                <!-- Classification d'émotions -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Classification d'émotions</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AmineMrabet12/Deep-Learning" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Projet de classification d'émotions basé sur l'analyse de texte
+                            avec deep learning.</p>
                         <ul>
                             <li>Analyse et preprocessing de corpus textuels pour l'identification d'émotions</li>
                             <li>Implémentation de modèles de deep learning avec TensorFlow/Keras</li>
@@ -608,25 +707,28 @@
                             <li>Optimisation des hyperparamètres et techniques de régularisation</li>
                             <li>Évaluation des performances sur différents types de textes émotionnels</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">NLTK</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Pandas</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <!-- <a href="https://github.com/AmineMrabet12/AI-Trading-Bot" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a> -->
-                    <h3 class="project-title">Assistant Intelligent</h3>
-                    <div class="project-description">
-                        <p>Assistant intelligent dédié aux personnes aveugles pour améliorer leur autonomie :</p>
+                <!-- Assistant Intelligent -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Assistant Intelligent</h3>
+                            <div class="project-links">
+                                <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                        <p class="project-description">Assistant intelligent dédié aux personnes aveugles pour améliorer
+                            leur autonomie.</p>
                         <ul>
                             <li>Aide et description de ce qui se trouve devant la personne (objets, personnes)</li>
                             <li>Identification et reconnaissance des éléments de l'environnement</li>
@@ -635,25 +737,27 @@
                             <li>Amélioration de l'autonomie et de la sécurité des personnes malvoyantes</li>
                             <li>Interface accessible et intuitive pour une utilisation facile</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Tensorflow</span>
-                        <span class="tech-tag">Scikit‑learn</span>
-                        <span class="tech-tag">YOLO</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">SpeechRecognizer</span>
-
+                        <div class="project-tech">
+                            <span class="tech-tag">Tensorflow</span>
+                            <span class="tech-tag">Scikit‑learn</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">SpeechRecognizer</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 10 -->
-                <div class="project-card">
-                    <!-- <a href="https://github.com/AmineMrabet12/Face-Detection-Recognition" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a> -->
-                    <h3 class="project-title">Intruder Detection</h3>
-                    <div class="project-description">
-                        <p>Projet de détection d'intrus utilisant la vision par ordinateur :</p>
+                <!-- Intruder Detection -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Intruder Detection</h3>
+                            <div class="project-links">
+                                <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                        <p class="project-description">Projet de détection d'intrus utilisant la vision par ordinateur.
+                        </p>
                         <ul>
                             <li>Développement d'un système de détection d'intrus en temps réel</li>
                             <li>Utilisation d'OpenCV pour le traitement d'images et la vision par ordinateur</li>
@@ -662,23 +766,26 @@
                             <li>Vérification et authentification des personnes autorisées</li>
                             <li>Système d'alerte automatique en cas de détection d'intrus</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">HaarCascade</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">HaarCascade</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 12 -->
-                <div class="project-card">
-                    <!-- <a href="https://github.com/AmineMrabet12/Face-Detection-Recognition" target="_blank" class="project-github">
-                        <i class="fab fa-github"></i>
-                    </a> -->
-                    <h3 class="project-title">Face Detection & Recognition</h3>
-                    <div class="project-description">
-                        <p>Projet de détection et reconnaissance faciale utilisant des modèles de deep learning :</p>
+                <!-- Face Detection & Recognition -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h3>Face Detection & Recognition</h3>
+                            <div class="project-links">
+                                <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                        <p class="project-description">Projet de détection et reconnaissance faciale utilisant des
+                            modèles de deep learning.</p>
                         <ul>
                             <li>Développement d'un système de détection et reconnaissance de visages</li>
                             <li>Implémentation du modèle Siamese pour l'apprentissage métrique</li>
@@ -687,13 +794,13 @@
                             <li>Comparaison et validation des visages détectés</li>
                             <li>Intégration de techniques de deep learning avancées</li>
                         </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">Siamese Network</span>
-                        <span class="tech-tag">Deep Learning</span>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">Siamese Network</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
                     </div>
                 </div>
 
@@ -702,21 +809,18 @@
 
         <!-- Social Activities Section -->
         <section class="social-activities-section">
-            <h2 class="section-title">
+            <h2 class="section-title" data-aos="fade-up">
                 <i class="fas fa-users"></i>
                 Activités Sociales
             </h2>
-            <div class="activities-grid">
+            <div class="projects-grid">
                 <!-- Head of Hard-Skills Department -->
-                <div class="activity-card">
-                    <div class="activity-header">
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-content">
                         <h3 class="activity-title">Responsable du Département Hard-Skills</h3>
-                        <p class="activity-organization">Club MAD à Esprit School of Business</p>
-                        <p class="activity-duration">Nov. 2020 – 2023</p>
-                    </div>
-                    <div class="activity-description">
-                        <p>Actions réalisées :</p>
-                        <ul>
+                        <p class="activity-organization" style="color: var(--primary);">Club MAD à Esprit School of
+                            Business | Nov. 2020 – 2023</p>
+                        <ul style="margin-top: 10px; color: var(--text-secondary);">
                             <li>Formation Excel avancée pour les membres du club</li>
                             <li>Formation en Data Science avec KNIME</li>
                             <li>Design Graphique (Adobe Photoshop, Adobe Illustrator)</li>
@@ -725,20 +829,87 @@
                 </div>
 
                 <!-- Basketball Player -->
-                <div class="activity-card">
-                    <div class="activity-header">
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
                         <h3 class="activity-title">Joueur de Basketball</h3>
-                        <p class="activity-organization">École Mini-Basketball à Ksar Hlel</p>
-                        <p class="activity-duration">Sep. 2013 – 2023</p>
-                    </div>
-                    <div class="activity-description">
-                        <p>Poste 4 : Ailier Fort (Allier fort)</p>
-                        <p>Promotion en tant qu'Assistant Coach durant les 3 dernières années</p>
+                        <p class="activity-organization" style="color: var(--primary);">École Mini-Basketball à Ksar
+                            Hlel | Sep. 2013 – 2023</p>
+                        <ul style="margin-top: 10px; color: var(--text-secondary);">
+                            <li>Poste 4 : Ailier Fort</li>
+                            <li>Promotion en tant qu'Assistant Coach durant les 3 dernières années</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Use Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container" data-aos="fade-up">
+                <h2 class="section-title">Me Contacter</h2>
+                <p class="contact-text">
+                    N'hésitez pas à me contacter pour toute opportunité ou collaboration.
+                </p>
+                <div
+                    style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+                    <a href="tel:+33750533956" class="email-btn">
+                        <i class="fas fa-phone"></i> +33 7 50 53 39 56
+                    </a>
+                    <a href="mailto:mrabemohamedamine1@gmail.com" class="email-btn">
+                        <i class="fas fa-envelope"></i> Me contacter par email
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mohamed Amine Mrabet. Fait avec passion.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Certification Preview Modal -->
+    <div id="certModal" class="cert-modal" onclick="closeCertPreview()">
+        <span class="cert-modal-close" onclick="closeCertPreview()">&times;</span>
+        <div class="cert-modal-content" onclick="event.stopPropagation()">
+            <iframe id="certPreviewFrame" src="" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Certification Preview
+        function openCertPreview(pdfPath) {
+            const modal = document.getElementById('certModal');
+            const frame = document.getElementById('certPreviewFrame');
+            frame.src = pdfPath;
+            modal.style.display = 'flex';
+            // Slight delay to allow display flex to apply before adding active class for opacity transition
+            setTimeout(() => {
+                modal.classList.add('active');
+            }, 10);
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeCertPreview() {
+            const modal = document.getElementById('certModal');
+            const frame = document.getElementById('certPreviewFrame');
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                frame.src = ''; // Clear source to stop processing
+            }, 300);
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+    </script>
 </body>
 
 </html>
