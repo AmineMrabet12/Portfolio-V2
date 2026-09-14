@@ -619,6 +619,92 @@ section {
     font-size: 0.95rem;
 }
 
+/* Sub-projects inside an experience card */
+.sub-projects {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sub-project {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+}
+
+.sub-project h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sub-project h4 .client-logo {
+    height: 30px;
+    width: auto;
+    max-width: 110px;
+    object-fit: contain;
+    background: white;
+    border-radius: 6px;
+    padding: 4px 6px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* square emblem marks need equal padding so they don't read as a block */
+.sub-project h4 .client-logo-square {
+    width: 30px;
+    max-width: 30px;
+    padding: 3px;
+}
+
+.sub-project ul {
+    list-style-type: none;
+    margin-top: 0.5rem;
+}
+
+.sub-project li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.sub-project li:last-child {
+    margin-bottom: 0;
+}
+
+/* Languages Section */
+.languages-section {
+    padding: 6rem 0;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.language-card {
+    text-align: center;
+}
+
+.language-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
