@@ -163,6 +163,74 @@
     'ct.made': 'Made with passion in Paris',
     'ct.top': 'Back to top ↑',
 
+    /* Mission details dialog */
+    'case.dalkia.meta': 'Dalkia — EDF · Jul. 2026 — Present',
+    'case.dalkia.ctx': 'As part of a debt collection management application, set up a processing chain to centralize and structure all email exchanges with customers, rebuild the conversation history and help account managers analyze and handle requests.',
+    'case.dalkia.d1': 'Designed and orchestrated automated pipelines with Apache Airflow covering the retrieval, processing and enrichment of emails from the inbox.',
+    'case.dalkia.d2': 'Set up email classification and matching mechanisms to rebuild the different conversations and the history of exchanges.',
+    'case.dalkia.d3': 'Linked spontaneously received emails, with no direct link to an existing reminder email, to the relevant collection scope.',
+    'case.dalkia.d4': 'Identified and associated each email with the customer, the portfolio and the related business elements, so that account managers can find every exchange from their own work scope.',
+    'case.dalkia.d5': 'Built a consolidated communication matrix per customer and portfolio, grouping exchanges and their history to make collection follow-up easier.',
+    'case.dalkia.d6': 'Set up an email content analysis chain to extract the context, the nature of the request and its priority level.',
+    'case.dalkia.d7': 'Studied and experimented with several LLMs running in a dedicated local environment, separate from the business application and without relying on a managed LLM service.',
+    'case.dalkia.d8': 'Evaluated different models to find the best trade-off between comprehension quality, performance and operating constraints.',
+    'case.dalkia.d9': 'Used the LLM to automatically suggest the business actions to take based on the email content, for example:',
+    'case.dalkia.d9.1': 'forwarding to accounting',
+    'case.dalkia.d9.2': 'detecting an urgent request',
+    'case.dalkia.d9.3': 'resending an account statement',
+    'case.dalkia.d9.4': 'routing to the right business process',
+    'case.dalkia.d10': 'Integrated the AI analysis results into the processing workflow to help account managers qualify and handle requests.',
+    'case.dalkia.i1': 'Centralize the history of collection-related communications and make it reliable.',
+    'case.dalkia.i2': 'Enable each account manager to quickly find every exchange linked to their portfolio and customers.',
+    'case.dalkia.i3': 'Reduce the time needed to qualify emails manually.',
+    'case.dalkia.i4': 'Make requests easier to prioritize and route thanks to automated content analysis.',
+    'case.dalkia.i5': 'Prepare the industrialization of AI assistance while keeping control over hosting and data.',
+    'case.dalkia.env9': 'email processing',
+    'case.dalkia.env10': 'pipeline orchestration',
+    'case.dalkia.open': 'See details of the Dalkia mission',
+    'case.stellantis.meta': 'Stellantis · May 2026 — June 2026',
+    'case.stellantis.role': 'AWS Data Engineering · IT-PEAC',
+    'case.stellantis.ctx': 'With a large volume of used-vehicle photos stored on AWS S3, set up a data chain to identify the objects to keep, archive or delete, make the tracking of their status reliable and optimize storage costs.',
+    'case.stellantis.d1': 'Set up and operated S3 Inventory to get an exhaustive view of the stored objects and their metadata.',
+    'case.stellantis.d2': 'Retrieved the S3 inventories in Parquet format and queried them with AWS Glue / Athena to analyze photo volumes and statuses.',
+    'case.stellantis.d3': 'Automated the generation of S3 Batch Operations manifests from the consolidated data.',
+    'case.stellantis.d4': 'Industrialized archiving, tagging and deletion operations via S3 Batch Operations / PutObjectTagging.',
+    'case.stellantis.d5': 'Set up reconciliation mechanisms between S3 Inventory, the AWS jobs and the database to check that operations ran correctly.',
+    'case.stellantis.d6': 'Orchestrated a multi-country AWS Glue workflow covering 15 countries × 4 jobs, with conditional triggers and concurrent run management.',
+    'case.stellantis.d7': 'Automated the deployment of workflows and jobs via Bitbucket Pipelines / CI/CD.',
+    'case.stellantis.open': 'See details of the Stellantis mission',
+    'case.leasys.meta': 'Leasys · Apr. 2026 — May 2026',
+    'case.leasys.ctx': 'Set up a reporting solution to improve the operational management of order processing and give senior management a consolidated view of performance indicators and of the risks related to order tracking.',
+    'case.leasys.d1': 'Designed and implemented the data preparation jobs needed to feed the business reports.',
+    'case.leasys.d2': 'Cleaned, transformed and prepared the data used to compute operational and decision-making indicators.',
+    'case.leasys.d3': 'Worked with business and technical teams to translate management needs into usable indicators and reports.',
+    'case.leasys.d4': 'Contributed to the design of Amazon QuickSight dashboards enabling:',
+    'case.leasys.d4.1': 'tracking of activity and operational performance',
+    'case.leasys.d4.2': 'identification of orders requiring particular attention',
+    'case.leasys.d4.3': 'tracking of risk indicators',
+    'case.leasys.d4.4': 'a consolidated view for steering and executive reporting',
+    'case.leasys.d5': 'Set up an industrialization and deployment chain for reporting components across environments, integrated into the Bitbucket pipelines.',
+    'case.leasys.d6': 'Took part in automating the deployment and configuration of QuickSight resources to make promotions between environments more reliable.',
+    'case.leasys.d7': 'Worked with development teams to embed QuickSight dashboards directly into business applications.',
+    'case.leasys.i1': 'Operational indicators centralized in consistent reporting.',
+    'case.leasys.i2': 'Better visibility on order processing and tracking.',
+    'case.leasys.i3': 'Steering indicators suited to operational teams as well as to management.',
+    'case.leasys.i4': 'More reliable, automated deployment of reports across environments.',
+    'case.leasys.open': 'See details of the Leasys mission',
+    'case.carrefour.meta': 'Carrefour · Mar. 2025 — Sept. 2025',
+    'case.carrefour.title': 'Overhaul of the ML API predicting promotional sales',
+    'case.carrefour.ctx': 'Overhaul of the machine learning API predicting promotional sales: migration from a monolithic architecture to a microservices architecture on Google Cloud Run.',
+    'case.carrefour.d1': 'Set up automated data pipelines to ingest sales and promotions data.',
+    'case.carrefour.d2': 'Transformed data with dbt and Apache Airflow, and analyzed model performance in BigQuery.',
+    'case.carrefour.d3': 'Helped build interactive Looker Studio dashboards to track key metrics and sales trends.',
+    'case.carrefour.d4': 'Set up load testing with Locust and API documentation with Swagger.',
+    'case.carrefour.open': 'See details of the Carrefour mission',
+    'case.more': 'See details',
+    'case.ctx': 'Context',
+    'case.done': 'Achievements',
+    'case.result': 'Result',
+    'case.env': 'Tech environment',
+
     'modal.close': 'Close'
   };
 
@@ -194,7 +262,7 @@
 
   /* ── State (mirrors renderVals) ── */
   var root = document.getElementById('top');
-  var modal = document.getElementById('cert-modal');
+  var dialogs = Array.prototype.slice.call(document.querySelectorAll('.modal'));
   var state = {
     theme: root.classList.contains('theme-light') ? 'light' : 'dark',
     lang: storageGet('pf-lang') === 'en' ? 'en' : 'fr',
@@ -213,7 +281,7 @@
     /* Theme */
     ['dark', 'light'].forEach(function (t) {
       root.classList.toggle('theme-' + t, state.theme === t);
-      modal.classList.toggle('theme-' + t, state.theme === t);
+      dialogs.forEach(function (d) { d.classList.toggle('theme-' + t, state.theme === t); });
     });
 
     /* Language */
@@ -306,49 +374,80 @@
     if (!panel.hidden && !panel.contains(e.target) && !menuBtn.contains(e.target)) setMenu(false);
   });
 
-  /* Certificate modal */
-  var frame = document.getElementById('cert-modal-frame');
-  var modalTitle = document.getElementById('cert-modal-title');
-  var closeBtn = modal.querySelector('button[data-close]');
+  /* Dialogs: certificate PDF + mission details */
+  var openDialog = null;
   var lastTrigger = null;
 
-  function openCert(btn) {
-    var name = btn.closest('.cert').querySelector('b').textContent;
-    lastTrigger = btn;
-    modalTitle.textContent = name;
-    frame.title = name;
-    frame.src = btn.getAttribute('data-pdf');
-    modal.hidden = false;
-    document.body.classList.add('modal-open');
-    closeBtn.focus();
+  function closeButton(d) { return d.querySelector('button[data-close]'); }
+  function focusables(d) {
+    return Array.prototype.filter.call(d.querySelectorAll('button, iframe, [tabindex="0"]'), function (el) {
+      return !el.closest('[hidden]');
+    });
   }
-  function closeCert() {
-    if (modal.hidden) return;
-    modal.hidden = true;
-    frame.src = 'about:blank';
+  function showDialog(d, trigger) {
+    lastTrigger = trigger;
+    openDialog = d;
+    d.hidden = false;
+    document.body.classList.add('modal-open');
+    closeButton(d).focus();
+  }
+  function closeDialog() {
+    if (!openDialog) return;
+    var d = openDialog;
+    openDialog = null;
+    d.hidden = true;
+    if (d.id === 'cert-modal') frame.src = 'about:blank';
     document.body.classList.remove('modal-open');
     if (lastTrigger) lastTrigger.focus();
     lastTrigger = null;
   }
-  document.querySelectorAll('.cert-view[data-pdf]').forEach(function (btn) {
-    btn.addEventListener('click', function () { openCert(btn); });
+  dialogs.forEach(function (d) {
+    d.querySelectorAll('[data-close]').forEach(function (el) { el.addEventListener('click', closeDialog); });
+    /* Cycle Tab / Shift+Tab inside the open dialog. */
+    d.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab') return;
+      var items = focusables(d);
+      var i = items.indexOf(document.activeElement);
+      e.preventDefault();
+      items[(i + (e.shiftKey ? items.length - 1 : 1)) % items.length].focus();
+    });
   });
-  modal.querySelectorAll('[data-close]').forEach(function (el) { el.addEventListener('click', closeCert); });
   /* Keep focus inside the dialog while it is open. */
   document.addEventListener('focusin', function (e) {
-    if (!modal.hidden && !modal.contains(e.target)) closeBtn.focus();
+    if (openDialog && !openDialog.contains(e.target)) closeButton(openDialog).focus();
   });
-  modal.addEventListener('keydown', function (e) {
-    if (e.key !== 'Tab') return;
-    var items = [closeBtn, frame];
-    var i = items.indexOf(document.activeElement);
-    e.preventDefault();
-    items[(i + (e.shiftKey ? items.length - 1 : 1)) % items.length].focus();
+
+  /* Certificate PDF */
+  var certModal = document.getElementById('cert-modal');
+  var frame = document.getElementById('cert-modal-frame');
+  var certTitle = document.getElementById('cert-modal-title');
+  document.querySelectorAll('.cert-view[data-pdf]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var name = btn.closest('.cert').querySelector('b').textContent;
+      certTitle.textContent = name;
+      frame.title = name;
+      frame.src = btn.getAttribute('data-pdf');
+      showDialog(certModal, btn);
+    });
+  });
+
+  /* Mission details */
+  var caseModal = document.getElementById('case-modal');
+  var caseBox = caseModal.querySelector('[role="dialog"]');
+  var caseScroll = caseModal.querySelector('.modal-scroll');
+  document.querySelectorAll('.mcard-more[data-case]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-case');
+      caseModal.querySelectorAll('.case').forEach(function (a) { a.hidden = a.id !== id; });
+      caseBox.setAttribute('aria-labelledby', id + '-title');
+      showDialog(caseModal, btn);
+      caseScroll.scrollTop = 0;
+    });
   });
 
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape') return;
-    if (!modal.hidden) closeCert();
+    if (openDialog) closeDialog();
     else if (!panel.hidden) setMenu(false, true);
   });
 
