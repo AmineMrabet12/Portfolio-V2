@@ -264,6 +264,18 @@ button.cert-view{background:none;color:inherit;font-family:inherit;line-height:i
 .mcard-more{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:none;color:var(--ink);font:600 13px/1 var(--f-body);cursor:pointer}
 .mcard-more:hover{border-color:var(--accent-ink);color:var(--accent-ink)}
 
+/* Project cards: the GitHub link stretches over the whole card (as the original <a> card did),
+   the "Voir le détail" button sits above it */
+.pcard{position:relative}
+.pf article.pcard:hover{border-color:color-mix(in oklab,var(--accent) 55%,transparent);transform:translateY(-3px);box-shadow:var(--shadow)}
+.pcard-link{display:inline-grid;place-items:center;width:44px;height:44px;margin:-13px}
+.pcard-link::after{content:'';position:absolute;inset:0;border-radius:20px}
+.pcard-link:focus-visible{outline:none}
+.pcard:has(.pcard-link:focus-visible){outline:2px solid var(--accent);outline-offset:3px}
+.pf .pcard:hover .pcard-link{color:var(--accent-ink)}
+.pcard-foot{position:relative;z-index:1;padding-top:6px;pointer-events:none}
+.pcard-foot > *{pointer-events:auto}
+
 /* Dialogs: certificate PDF + mission details (outside .pf, so they carry their own tokens) */
 .modal{--accent:#3B82F6;--teal:#14B8A6;--f-head:'Poppins',system-ui,sans-serif;--f-body:'Inter',system-ui,sans-serif;position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px;font-family:var(--f-body);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
 .modal *{box-sizing:border-box}
@@ -290,6 +302,10 @@ body.modal-open{overflow:hidden}
 .case-sub{margin-top:8px !important;padding-left:18px;list-style:disc;display:grid;gap:4px;font-size:14.5px;color:var(--muted)}
 .case-sub li{display:list-item;font-size:inherit;color:inherit}
 .case .result{margin-top:0}
+.case-badge{margin-top:12px}
+.case-links{display:flex;flex-wrap:wrap;gap:12px}
+.case-links .btn{color:var(--ink);text-decoration:none}
+.case-links .btn:hover{border-color:var(--accent-ink);color:var(--accent-ink)}
 
 @media (max-width: 600px){
   .modal{padding:12px}
