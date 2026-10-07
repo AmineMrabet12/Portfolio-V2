@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Portfolio — Mohamed Amine Mrabet</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="pf.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div class="{{rootClass}}" style="--accent: {{accent}}" id="top">
+
+<header class="nav">
+<div class="wrap nav-in">
+<a class="brand" href="#top" aria-label="Accueil — Mohamed Amine Mrabet"><span class="mark">MA.</span></a>
+<nav class="nav-links" aria-label="Navigation principale">
+<a href="#experience">Expérience</a>
+<a href="#projets">Projets</a>
+<a href="#stack">Compétences</a>
+<a href="#parcours">Parcours</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="nav-right">
+<div class="seg" role="group" aria-label="Langue">
+<button class="{{langFr}}" onClick="{{setFr}}">FR</button>
+<button class="{{langEn}}" onClick="{{setEn}}">EN</button>
+</div>
+<button class="icon-btn" aria-label="Changer de thème" onClick="{{toggleTheme}}">
+<sc-if value="{{isLight}}" hint-placeholder-val="{{false}}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+</sc-if>
+<sc-if value="{{isDark}}" hint-placeholder-val="{{true}}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</sc-if>
+</button>
+<a class="btn btn-primary btn-sm btn-cv" href="#" aria-label="Télécharger le CV">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"></path><path d="m6 11 6 6 6-6"></path><path d="M5 20h14"></path></svg>
+<span class="cv-label">CV</span>
+</a>
+<button class="icon-btn nav-menu" aria-label="Ouvrir le menu">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16"></path><path d="M4 16h16"></path></svg>
+</button>
+</div>
+</div>
+</header>
+
+<main class="wrap">
+
+<section class="hero">
+<div>
+<div class="hero-head">
+<div class="avatar"><img src="IMG_7163.jpeg" alt="Portrait de Mohamed Amine Mrabet"></div>
+<div>
+<div class="hello">Bonjour, je suis</div>
+<div class="name">Mohamed Amine Mrabet</div>
+<div class="role"><span class="dot dot-live"></span>Data &amp; AI Engineer · IT-PEAC, Paris</div>
+</div>
+</div>
+<h1>Je construis des pipelines de données et des agents IA <span class="grad">qui tiennent en production.</span></h1>
+<p class="lead">Ingénieur Data &amp; IA, diplômé d’un Master en Intelligence Artificielle (EPITA, mention Très Bien). J’industrialise des pipelines cloud, du Machine Learning et des systèmes à base de LLM pour des groupes comme Stellantis, Carrefour, Leasys et Dalkia.</p>
+<div class="cta">
+<a class="btn btn-primary" href="#projets">Voir mes projets
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+</a>
+<a class="btn btn-ghost" href="#contact">Me contacter</a>
+</div>
+<div class="socials">
+<a href="https://www.linkedin.com/in/mohamed-amine-mrabet/">LinkedIn <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a href="https://github.com/AmineMrabet12">GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a href="mailto:mrabetmohamedamine1@gmail.com">Email <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+</div>
+
+<aside class="glass impact" aria-label="Chiffres clés">
+<div class="eyebrow"><span class="dot"></span>Impact mesuré</div>
+<div class="impact-grid">
+<div class="metric"><div class="metric-n">−85 %</div><p>de mémoire pour l’API de prévision des ventes (20 GB → 3 GB)</p><span class="src">Carrefour</span></div>
+<div class="metric"><div class="metric-n">8<small>min</small> → 8<small>s</small></div><p>de démarrage après migration vers Cloud Run</p><span class="src">Carrefour</span></div>
+<div class="metric"><div class="metric-n">560</div><p>tests automatisés et 13 quality gates pour un agent DevOps IA</p><span class="src">IT-PEAC</span></div>
+<div class="metric"><div class="metric-n">15 × 4</div><p>pays × jobs AWS Glue orchestrés dans un même workflow</p><span class="src">Stellantis</span></div>
+</div>
+<div class="facts">
+<div class="fact"><b>Master IA — EPITA</b><span>Mention Très Bien · 2025</span></div>
+<div class="fact"><b>Cloud</b><span>AWS · GCP · Terraform</span></div>
+<div class="fact"><b>Langues</b><span>Français · Anglais · Arabe</span></div>
+</div>
+</aside>
+</section>
+
+<div class="clients" aria-label="Clients">
+<span class="eyebrow">Ils m’ont fait confiance</span>
+<img src="logo/stellantis.svg" alt="Stellantis" style="height: 44px">
+<img src="logo/Emblema-Carrefour.png" alt="Carrefour" style="height: 34px">
+<img src="logo/leasys.png" alt="Leasys" style="height: 20px">
+<figure><img src="logo/dalkia.webp" alt="Dalkia" style="height: 30px"><figcaption>Groupe EDF</figcaption></figure>
+</div>
+
+<section class="section" id="experience">
+<div class="sec-head">
+<div>
+<div class="eyebrow"><span class="dot"></span>01 — Expérience</div>
+<h2>Du notebook à la production, <span class="grad">pour de vrais clients.</span></h2>
+</div>
+<p>Data engineering, MLOps et agents IA, en conseil comme en grand groupe. Cliquez sur + pour voir le détail de chaque expérience.</p>
+</div>
+
+<div class="xp">
+
+<div class="xp-row">
+<div class="xp-meta">
+<div class="logo-tile"><img src="logo/ITPEAC.png" alt="IT-PEAC"></div>
+<div><div class="xp-date">Janv. 2026 — Présent</div><div class="xp-loc">Paris, France</div></div>
+</div>
+<div class="xp-main">
+<h3>Data &amp; AI Engineer <span>· IT-PEAC France</span></h3>
+<p class="xp-sum">Conception et déploiement de pipelines de données et de solutions d’IA pour plusieurs clients, de l’architecture serverless sur AWS jusqu’aux agents autonomes.</p>
+<sc-if value="{{x0.open}}" hint-placeholder-val="{{true}}">
+<div class="missions">
+<div class="mcard">
+<div class="mcard-head"><span class="logo-tile sm"><img src="logo/ITPEAC.png" alt=""></span>Agent IA</div>
+<h4>Agent DevOps autonome</h4>
+<p>Un ticket Jira labellisé déclenche un agent conteneurisé qui corrige le défaut, lance les tests et ouvre une Pull Request. La fusion reste humaine. Moteur de politiques, journal d’audit et exécution en sandbox.</p>
+<div class="kpi">560 tests · 13 quality gates · 100 % Terraform</div>
+<div class="tags"><span class="tag">Step Functions</span><span class="tag">ECS Fargate</span><span class="tag">Terraform</span></div>
+</div>
+<div class="mcard">
+<div class="mcard-head"><span class="logo-tile sm"><img src="logo/stellantis.svg" alt=""></span>Stellantis</div>
+<h4>Cycle de vie des photos de véhicules d’occasion</h4>
+<p>Archivage et suppression via S3 Batch Operations, workflow Glue multi-pays et déploiement CI/CD. Requêtes RDS ramenées de plusieurs minutes à quelques secondes.</p>
+<div class="kpi">15 pays × 4 jobs · pagination keyset</div>
+<div class="tags"><span class="tag">AWS Glue</span><span class="tag">S3</span><span class="tag">PostgreSQL</span></div>
+</div>
+<div class="mcard">
+<div class="mcard-head"><span class="logo-tile sm"><img src="logo/leasys.png" alt=""></span>Leasys</div>
+<h4>Pipeline de données &amp; visualisation</h4>
+<p>Pipeline complet de l’ingestion au nettoyage, feature engineering et suivi des indicateurs clés sur Amazon QuickSight.</p>
+<div class="kpi">Ingestion → nettoyage → KPI</div>
+<div class="tags"><span class="tag">Python</span><span class="tag">AWS</span><span class="tag">QuickSight</span></div>
+</div>
+<div class="mcard">
+<div class="mcard-head"><span class="logo-tile sm"><img src="logo/dalkia.webp" alt=""></span>Dalkia — EDF</div>
+<h4>Recouvrement assisté par LLM</h4>
+<p>Classification des emails entrants, résumé de la demande client et proposition d’actions automatisées pour accélérer le recouvrement.</p>
+<div class="kpi">Classer → résumer → agir</div>
+<div class="tags"><span class="tag">LLMs</span><span class="tag">NLP</span><span class="tag">Python</span></div>
+</div>
+</div>
+</sc-if>
+</div>
+<button class="icon-btn" aria-label="Afficher le détail IT-PEAC 2026" aria-expanded="{{x0.aria}}" onClick="{{x0.toggle}}">
+<sc-if value="{{x0.open}}" hint-placeholder-val="{{true}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></sc-if>
+<sc-if value="{{x0.closed}}" hint-placeholder-val="{{false}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></sc-if>
+</button>
+</div>
+
+<div class="xp-row">
+<div class="xp-meta">
+<div class="logo-tile"><img src="logo/Emblema-Carrefour.png" alt="Carrefour"></div>
+<div><div class="xp-date">Mars 2025 — Sept. 2025</div><div class="xp-loc">Paris, France</div></div>
+</div>
+<div class="xp-main">
+<h3>Data Engineer <span>· Carrefour</span></h3>
+<p class="xp-sum">Refonte de l’API de machine learning de prévision des ventes en promotion : migration d’un monolithe vers des microservices sur Google Cloud Run.</p>
+<div class="result">20 GB → 3 GB de RAM · démarrage 8 min → 8 s</div>
+<sc-if value="{{x1.open}}" hint-placeholder-val="{{false}}">
+<ul class="checks" style="margin-top: 20px">
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Pipelines automatisés d’ingestion et de transformation avec dbt et Airflow</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Analyse des performances des modèles dans BigQuery</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Tableaux de bord Looker Studio pour le suivi des métriques et des tendances de vente</li>
+</ul>
+<div class="tags"><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">dbt</span><span class="tag">Airflow</span><span class="tag">BigQuery</span><span class="tag">Locust</span></div>
+</sc-if>
+</div>
+<button class="icon-btn" aria-label="Afficher le détail Carrefour" aria-expanded="{{x1.aria}}" onClick="{{x1.toggle}}">
+<sc-if value="{{x1.open}}" hint-placeholder-val="{{false}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></sc-if>
+<sc-if value="{{x1.closed}}" hint-placeholder-val="{{true}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></sc-if>
+</button>
+</div>
+
+<div class="xp-row">
+<div class="xp-meta">
+<div class="logo-tile"><img src="logo/ITPEAC.png" alt="IT-PEAC"></div>
+<div><div class="xp-date">Août 2023 — Janv. 2024</div><div class="xp-loc">Sousse, Tunisie</div></div>
+</div>
+<div class="xp-main">
+<h3>Data Scientist <span>· IT-PEAC</span></h3>
+<p class="xp-sum">Système de prédiction de prix de véhicules pour Stellantis (Random Forest, XGBoost), déployé sur AWS dans une architecture conteneurisée, avec le CEO comme tuteur.</p>
+<div class="result">Erreur moyenne ramenée à ±1 000 €</div>
+<sc-if value="{{x2.open}}" hint-placeholder-val="{{false}}">
+<ul class="checks" style="margin-top: 20px">
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Pipeline automatisé de collecte, préparation et entraînement des modèles</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Prédictions en temps réel pour les tableaux de bord de tarification</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Analyses exploratoires et suivi des performances dans Amazon QuickSight</li>
+</ul>
+<div class="tags"><span class="tag">XGBoost</span><span class="tag">Scikit-learn</span><span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Flask</span></div>
+</sc-if>
+</div>
+<button class="icon-btn" aria-label="Afficher le détail IT-PEAC 2023" aria-expanded="{{x2.aria}}" onClick="{{x2.toggle}}">
+<sc-if value="{{x2.open}}" hint-placeholder-val="{{false}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></sc-if>
+<sc-if value="{{x2.closed}}" hint-placeholder-val="{{true}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></sc-if>
+</button>
+</div>
+
+<div class="xp-row">
+<div class="xp-meta">
+<div class="logo-tile"><img src="logo/amagroup_qualityfirst_safetybefore_logo.jpeg" alt="A.M.A Group"></div>
+<div><div class="xp-date">Août 2022 — Sept. 2022</div><div class="xp-loc">Tunis, Tunisie</div></div>
+</div>
+<div class="xp-main">
+<h3>Data Analyst <span>· A.M.A Group — OMDI</span></h3>
+<p class="xp-sum">Analyse et visualisation des données de ventes pour le département commercial : spécifications, tableau de bord web en Python et dashboard dynamique Power BI.</p>
+<sc-if value="{{x3.open}}" hint-placeholder-val="{{false}}">
+<div class="tags" style="margin-top: 18px"><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Plotly</span><span class="tag">Seaborn</span></div>
+</sc-if>
+</div>
+<button class="icon-btn" aria-label="Afficher le détail A.M.A Group" aria-expanded="{{x3.aria}}" onClick="{{x3.toggle}}">
+<sc-if value="{{x3.open}}" hint-placeholder-val="{{false}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></sc-if>
+<sc-if value="{{x3.closed}}" hint-placeholder-val="{{true}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></sc-if>
+</button>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="projets">
+<div class="sec-head">
+<div>
+<div class="eyebrow"><span class="dot"></span>02 — Projets</div>
+<h2>Des projets menés <span class="grad">jusqu’au déploiement.</span></h2>
+</div>
+<p>Un projet phare, puis une sélection filtrable par domaine. Chaque carte mène au code source.</p>
+</div>
+
+<article class="feat">
+<div class="feat-body">
+<span class="badge" style="align-self: flex-start">Projet phare</span>
+<h3>AI-Powered Business Intelligence Agent</h3>
+<p>Une plateforme BI conversationnelle : importez un CSV, un Excel ou une base SQL, posez vos questions en langage naturel. L’agent nettoie, modélise, écrit le SQL, génère les dashboards et rédige le rapport.</p>
+<ul class="checks">
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Contrôle qualité et nettoyage des données en un clic</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Schéma en étoile suggéré, modeleur visuel React Flow</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Agent Plan → Exécution → Vérification avec sessions persistantes</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Dashboards Plotly et rapports exécutifs générés automatiquement</li>
+</ul>
+<div class="tags"><span class="tag">React (Vite)</span><span class="tag">FastAPI</span><span class="tag">Gemini</span><span class="tag">Vertex AI</span><span class="tag">Cloud Run</span><span class="tag">Docker</span></div>
+<div class="feat-links">
+<a class="btn btn-primary btn-sm" href="#">Voir la démo
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+</a>
+<a class="btn btn-ghost btn-sm" href="https://github.com/AmineMrabet12">Code source</a>
+</div>
+</div>
+<div class="feat-vis">
+<div class="win" aria-hidden="true">
+<div class="win-bar"><i></i><i></i><i></i><em>bi-agent · nouvelle analyse</em></div>
+<div class="win-body">
+<div class="bubble">Montre l’évolution des ventes par région sur l’année</div>
+<div class="agent">
+<div class="agent-av">AI</div>
+<div class="agent-col">
+<div class="steps"><span class="step ok">Plan</span><span class="step ok">Exécution</span><span class="step ok">Vérification</span></div>
+<div class="code"><b>SELECT</b> region, mois, <b>SUM</b>(ventes)
+<b>FROM</b> ventes
+<b>GROUP BY</b> region, mois;</div>
+<div class="chart">
+<div class="chart-t">Ventes par région — données d’exemple</div>
+<div class="bars"><span style="height: 38%"></span><span style="height: 52%"></span><span style="height: 47%"></span><span class="hi" style="height: 68%"></span><span style="height: 58%"></span><span style="height: 74%"></span><span class="hi" style="height: 92%"></span><span style="height: 80%"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+
+<div class="filters" role="group" aria-label="Filtrer les projets">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="5">
+<button class="{{f.cls}}" aria-pressed="{{f.pressed}}" onClick="{{f.pick}}">{{f.label}} <span>{{f.count}}</span></button>
+</sc-for>
+</div>
+
+<div class="grid3">
+<sc-for list="{{projects}}" as="p" hint-placeholder-count="6">
+<a class="pcard" href="https://github.com/AmineMrabet12">
+<div class="pcard-top">
+<span class="eyebrow"><span class="dot"></span>{{p.cat}}</span>
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+</div>
+<sc-if value="{{p.hasBadge}}" hint-placeholder-val="{{false}}">
+<span class="badge" style="align-self: flex-start">
+<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M7 4h10v5a5 5 0 0 1-10 0z"></path><path d="M17 5h3v2a3 3 0 0 1-3 3"></path><path d="M7 5H4v2a3 3 0 0 0 3 3"></path></svg>
+{{p.badge}}
+</span>
+</sc-if>
+<h3>{{p.title}}</h3>
+<p>{{p.desc}}</p>
+<div class="tags">
+<sc-for list="{{p.tags}}" as="t" hint-placeholder-count="3"><span class="tag">{{t}}</span></sc-for>
+</div>
+</a>
+</sc-for>
+</div>
+
+<sc-if value="{{showMoreBtn}}" hint-placeholder-val="{{true}}">
+<div class="center"><button class="btn btn-ghost" onClick="{{toggleMore}}">{{moreLabel}}</button></div>
+</sc-if>
+</section>
+
+<section class="section" id="stack">
+<div class="sec-head">
+<div>
+<div class="eyebrow"><span class="dot"></span>03 — Compétences</div>
+<h2>Les outils que j’utilise <span class="grad">au quotidien.</span></h2>
+</div>
+<p>Regroupés par usage plutôt qu’en liste exhaustive, pour se lire en dix secondes.</p>
+</div>
+<div class="stack">
+<div class="stack-col">
+<h4>Data Engineering</h4>
+<p>Ingestion, transformation, orchestration et qualité.</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">dbt</span><span class="tag">Airflow</span><span class="tag">AWS Glue</span><span class="tag">PostgreSQL</span><span class="tag">BigQuery</span><span class="tag">Great Expectations</span></div>
+</div>
+<div class="stack-col">
+<h4>IA &amp; LLM</h4>
+<p>Du modèle classique à l’agent autonome sécurisé.</p>
+<div class="tags"><span class="tag">Agents IA</span><span class="tag">LLMs / NLP</span><span class="tag">Prompt engineering</span><span class="tag">Sandboxing</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Scikit-learn</span><span class="tag">XGBoost</span></div>
+</div>
+<div class="stack-col">
+<h4>Cloud &amp; MLOps</h4>
+<p>Infrastructure as code, conteneurs et CI/CD.</p>
+<div class="tags"><span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">Terraform</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Step Functions</span><span class="tag">Cloud Run</span><span class="tag">MLflow</span></div>
+</div>
+<div class="stack-col">
+<h4>Analytics &amp; Web</h4>
+<p>Dashboards décisionnels et APIs de modèles.</p>
+<div class="tags"><span class="tag">QuickSight</span><span class="tag">Power BI</span><span class="tag">Looker Studio</span><span class="tag">Tableau</span><span class="tag">Grafana</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Streamlit</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="parcours">
+<div class="sec-head">
+<div>
+<div class="eyebrow"><span class="dot"></span>04 — Parcours</div>
+<h2>Formation, certifications <span class="grad">et le reste.</span></h2>
+</div>
+<p>Mathématiques appliquées puis intelligence artificielle, complétées par des certifications cloud, data et Microsoft.</p>
+</div>
+<div class="two">
+<div>
+<div class="sub-t">Formation</div>
+<div class="edu">
+<div class="logo-tile"><img src="logo/EPITA%20School%20of%20Engineering%20and%20Computer%20Science_Logo.png" alt="EPITA"></div>
+<div>
+<h4>Master of Science — Intelligence Artificielle</h4>
+<p>EPITA, Paris · 2024 — 2025</p>
+<span class="badge">Mention Très Bien</span>
+</div>
+</div>
+<div class="edu">
+<div class="logo-tile"><img src="logo/ebs.png" alt="ESB"></div>
+<div>
+<h4>Licence en Mathématiques Appliquées — Analyse des données &amp; aide à la décision</h4>
+<p>Esprit School of Business, Tunis · 2020 — 2023</p>
+<span class="badge">Mention Excellent</span>
+</div>
+</div>
+<div class="sub-t gap-top">Au-delà du code</div>
+<div class="mini">Responsable du département Hard-Skills, Club MAD<span>2020 — 2023</span></div>
+<div class="mini">Joueur puis assistant coach, École Mini-Basket de Ksar Hlel<span>2013 — 2023</span></div>
+<div class="sub-t gap-top">Langues</div>
+<div class="mini">Français · Anglais<span>Maîtrise professionnelle</span></div>
+<div class="mini">Arabe<span>Langue maternelle</span></div>
+</div>
+<div>
+<div class="sub-t">Certifications</div>
+<div class="cert"><span class="cert-img"><img src="Badges/365-data-science.png" alt="365 Data Science"></span><div><b>AI Model Deployment on AWS</b><small>365 Data Science · 2025</small></div><a class="cert-view" href="#" aria-label="Voir le certificat AI Model Deployment on AWS">Voir</a></div>
+<div class="cert"><span class="cert-img"><img src="Badges/365-data-science.png" alt="365 Data Science"></span><div><b>Power BI</b><small>365 Data Science · 2025</small></div><a class="cert-view" href="#" aria-label="Voir le certificat Power BI">Voir</a></div>
+<div class="cert"><span class="cert-img"><img src="Badges/Udemy-Logo.png" alt="Udemy"></span><div><b>Deep Learning with TensorFlow &amp; Keras</b><small>Udemy · 2023</small></div><a class="cert-view" href="#" aria-label="Voir le certificat Deep Learning with TensorFlow and Keras">Voir</a></div>
+<div class="cert"><span class="cert-img"><img src="Badges/MCT-Microsoft_Certified_Trainer.png" alt="Microsoft Certified Trainer"></span><div><b>Microsoft Certified Trainer</b><small>Microsoft · 2022</small></div><a class="cert-view" href="#" aria-label="Voir le certificat Microsoft Certified Trainer">Voir</a></div>
+<div class="cert"><span class="cert-img"><img src="Badges/MicrosoftTeams-image__5_.png" alt="IT Specialist"></span><div><b>IT Specialist — Databases</b><small>Certiport / Pearson · 2021</small></div><span></span></div>
+<div class="cert"><span class="cert-img"><img src="Badges/MTA-Database_Fundamentals-600x600.png" alt="MTA"></span><div><b>Database Fundamentals</b><small>Microsoft · 2021</small></div><span></span></div>
+<div class="cert"><span class="cert-img"><img src="Badges/MTA-Introduction_to_Programming_Using_Python-600x600.png" alt="MTA"></span><div><b>Introduction to Programming Using Python</b><small>Microsoft · 2021</small></div><span></span></div>
+<div class="cert"><span class="cert-img"><img src="Badges/MOS_Excel.png" alt="MOS"></span><div><b>Office Specialist: Excel Associate</b><small>Microsoft · 2021</small></div><span></span></div>
+<div class="cert"><span class="cert-img"><img src="Badges/IBM_logo.svg.png" alt="IBM"></span><div><b>Databases &amp; SQL for Data Science with Python</b><small>Coursera (IBM) · 2020</small></div><a class="cert-view" href="#" aria-label="Voir le certificat Databases and SQL for Data Science">Voir</a></div>
+<div class="cert"><span class="cert-img"><img src="Badges/MOS_Excel_Expert6.png" alt="MOS Expert"></span><div><b>Office Specialist: Excel Expert</b><small>Microsoft · 2020</small></div><span></span></div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="band" id="contact">
+<div class="wrap band-in">
+<div class="eyebrow"><span class="dot"></span>05 — Contact</div>
+<h2>Un projet data ou IA en tête ? <span class="grad">Parlons-en.</span></h2>
+<a class="mail" href="mailto:mrabetmohamedamine1@gmail.com">mrabetmohamedamine1@gmail.com
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+</a>
+<div class="band-cta">
+<a class="btn btn-ghost" href="https://www.linkedin.com/in/mohamed-amine-mrabet/">LinkedIn</a>
+<a class="btn btn-ghost" href="https://github.com/AmineMrabet12">GitHub</a>
+<a class="btn btn-ghost" href="tel:+33750533956">+33 7 50 53 39 56</a>
+</div>
+<div class="foot">
+<span>© 2026 Mohamed Amine Mrabet</span>
+<span>Fait avec passion à Paris</span>
+<a href="#top">Retour en haut ↑</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["dark","light"],"default":"dark","section":"Thème"},"accent":{"editor":"color","options":["#3B82F6","#14B8A6","#0EA5E9","#6366F1"],"default":"#3B82F6","section":"Thème"},"$preview":{"width":1440,"height":6600}}'>
+class Component extends DCLogic {
+  allProjects() {
+    return [
+      { f: 'vision', cat: 'Vision · PFE', title: 'Reconnaissance faciale pour la prise de présence', desc: 'Collecte d’images via une app Flask, augmentation par GAN et CNN en transfer learning pour marquer automatiquement la présence.', tags: ['TensorFlow', 'GAN', 'Flask'], badge: 'Meilleur projet de l’année', extra: false },
+      { f: 'mlops', cat: 'MLOps', title: 'Pipeline ML de bout en bout', desc: 'Stockage PostgreSQL, orchestration Airflow, validation Great Expectations, API FastAPI et monitoring Grafana.', tags: ['Airflow', 'FastAPI', 'Grafana'], badge: '', extra: false },
+      { f: 'ml', cat: 'Machine Learning', title: 'Comportement client et explicabilité', desc: 'Segmentation, prédiction de tendances et explications SHAP, avec un modèle XGBoost suivi dans MLflow.', tags: ['XGBoost', 'SHAP', 'MLflow'], badge: '', extra: false },
+      { f: 'ml', cat: 'Deep Learning', title: 'Système de recommandation multi-tours', desc: 'Tours spécialisées utilisateurs, items et contexte avec embeddings, comparées aux modèles de recommandation classiques.', tags: ['TensorFlow', 'Embeddings', 'Sentence Transformers'], badge: '', extra: false },
+      { f: 'gen', cat: 'IA générative', title: 'Text-to-Music Generator', desc: 'Musique générée à partir de texte avec MusicGen, animations par diffusion, playlists, partage et traduction multilingue.', tags: ['PyTorch', 'MusicGen', 'FastAPI'], badge: '', extra: false },
+      { f: 'vision', cat: 'Vision', title: 'Assistant pour personnes malvoyantes', desc: 'Description de l’environnement, détection d’obstacles en temps réel et assistant vocal pour gagner en autonomie.', tags: ['YOLO', 'OpenCV', 'Speech'], badge: '', extra: false },
+      { f: 'ml', cat: 'Machine Learning', title: 'Prédiction des prix immobiliers', desc: 'Analyse exploratoire, feature engineering, XGBoost optimisé par validation croisée et pipeline de prédiction temps réel.', tags: ['XGBoost', 'Scikit-learn', 'Matplotlib'], badge: '', extra: true },
+      { f: 'ml', cat: 'NLP', title: 'Classification d’émotions', desc: 'Réseaux LSTM et GRU sur word embeddings pour identifier les émotions dans différents types de textes.', tags: ['Keras', 'LSTM', 'NLTK'], badge: '', extra: true },
+      { f: 'vision', cat: 'Vision', title: 'Détection d’intrus', desc: 'Détection de visages HaarCascade, reconnaissance TensorFlow et alerte automatique en cas de personne non autorisée.', tags: ['OpenCV', 'TensorFlow', 'HaarCascade'], badge: '', extra: true },
+      { f: 'vision', cat: 'Vision', title: 'Reconnaissance faciale siamoise', desc: 'Réseau siamois en apprentissage métrique pour comparer et valider des visages détectés.', tags: ['Keras', 'Siamese Network', 'Python'], badge: '', extra: true }
+    ];
+  }
+  renderVals() {
+    const s = this.state || {};
+    const theme = s.theme || (this.props.theme === 'light' ? 'light' : 'dark');
+    const accent = this.props.accent || '#3B82F6';
+    const open = s.open === undefined ? 0 : s.open;
+    const filter = s.filter || 'all';
+    const more = !!s.more;
+    const lang = s.lang || 'fr';
+    const row = (i) => ({
+      open: open === i,
+      closed: open !== i,
+      aria: open === i ? 'true' : 'false',
+      toggle: () => this.setState({ open: open === i ? -1 : i })
+    });
+    const all = this.allProjects();
+    const defs = [['all', 'Tous'], ['mlops', 'Data & MLOps'], ['ml', 'Machine Learning'], ['vision', 'Vision'], ['gen', 'IA générative']];
+    const filters = defs.map(([k, label]) => ({
+      label,
+      count: String(k === 'all' ? all.length : all.filter((p) => p.f === k).length),
+      cls: k === filter ? 'on' : '',
+      pressed: k === filter ? 'true' : 'false',
+      pick: () => this.setState({ filter: k })
+    }));
+    const matched = all.filter((p) => filter === 'all' || p.f === filter);
+    const visible = more ? matched : matched.filter((p) => !p.extra);
+    const hidden = matched.length - visible.length;
+    const projects = visible.map((p) => ({ ...p, hasBadge: !!p.badge }));
+    return {
+      rootClass: 'pf theme-' + theme,
+      accent,
+      isLight: theme === 'light',
+      isDark: theme === 'dark',
+      toggleTheme: () => this.setState({ theme: theme === 'dark' ? 'light' : 'dark' }),
+      langFr: lang === 'fr' ? 'on' : '',
+      langEn: lang === 'en' ? 'on' : '',
+      setFr: () => this.setState({ lang: 'fr' }),
+      setEn: () => this.setState({ lang: 'en' }),
+      x0: row(0), x1: row(1), x2: row(2), x3: row(3),
+      filters,
+      projects,
+      showMoreBtn: more || hidden > 0,
+      moreLabel: more ? 'Afficher moins' : 'Afficher ' + hidden + ' projet' + (hidden > 1 ? 's' : '') + ' de plus',
+      toggleMore: () => this.setState({ more: !more })
+    };
+  }
+}
+</script>
+</body>
+</html>
